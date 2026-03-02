@@ -1,7 +1,6 @@
 import { Card, CardContent } from './ui/card';
 import { Code2, Rocket, Users } from 'lucide-react';
 import { motion } from 'motion/react';
-import profilePhoto from 'figma:asset/c777a2bd636cfe51371c188a354993dc3ef2d7a7.png';
 
 export function About() {
   const containerVariants = {
