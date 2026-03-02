@@ -1,7 +1,7 @@
 import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
-
+import profilePhoto from '../../assets/c777a2bd636cfe51371c188a354993dc3ef2d7a7.png';
 export function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
@@ -57,7 +57,17 @@ export function Hero() {
                   ease: "easeInOut"
                 }}
               />
-             
+
+<motion.img
+  src={profilePhoto}
+  alt="Yaser Ewida"
+  className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-blue-500/30 shadow-2xl"
+  style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+  initial={{ scale: 0.8, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 1, delay: 0.2 }}
+/>
+              
             </div>
           </motion.div>
 
