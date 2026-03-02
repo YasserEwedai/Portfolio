@@ -20,16 +20,7 @@ export function About() {
 
   return (
     <section className="px-6 py-20 bg-gray-900 relative overflow-hidden">
-      {/* Subtle background photo */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gray-900/98 z-10"></div>
-        <img
-          src={profilePhoto}
-          alt="Background"
-          className="w-full h-full object-cover opacity-5"
-        />
-      </div>
-
+     
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
